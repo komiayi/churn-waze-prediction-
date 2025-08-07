@@ -3,7 +3,7 @@ Ce projet vise à créer un modèle de machine learning capable de prédire les 
 
 ---
 
-### 1. Préparation et Traitement des Données
+### 🔍 1. Préparation et Traitement des Données
 
 * **Analyse Exploratoire des Données (AED)** : Une analyse des données a été réalisée pour comprendre les caractéristiques des utilisateurs.
 * **Création de Caractéristiques (Feature Engineering)** : De nouvelles variables ont été créées pour enrichir le modèle, telles que le pourcentage de sessions sur le dernier mois, l'indication d'un conducteur professionnel, la moyenne de sessions par jour, etc.
@@ -12,7 +12,7 @@ Ce projet vise à créer un modèle de machine learning capable de prédire les 
 
 ---
 
-### 2. Modèles Évalués
+### 🌲 2. Modèles Évalués
 
 Deux modèles basés sur les arbres de décision ont été choisis pour leur capacité à gérer des données complexes et des interactions non linéaires :
 * **Random Forest**
@@ -20,24 +20,24 @@ Deux modèles basés sur les arbres de décision ont été choisis pour leur cap
 
 ---
 
-### 3. Ajustement du Seuil de Classification
+### ⚙️ 3. Ajustement du Seuil de Classification
 
 Un ajustement du seuil de classification a été réalisé pour améliorer les performances du modèle. Initialement, les modèles utilisent un seuil par défaut de **0.5**. Pour maximiser le compromis entre la **précision** et le **rappel**, un seuil optimal a été recherché sur l'ensemble de validation en maximisant le **F1-score**.
 
 ---
 
-### 4. Résultats et Analyse
+### 📊 4. Résultats et Analyse
 
 Les modèles ont été évalués sur l'ensemble de test, en utilisant d'abord le seuil par défaut (0.5), puis le seuil optimisé.
 
-#### Résultats avec Seuil par Défaut (0.5)
+#### ✅ Seuil par défaut (0.5)
 
 | Modèle | Précision | Rappel | F1-score | Accuracy | ROC AUC |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Random Forest** | 0.314 | 0.650 | 0.424 | 0.686 | 0.735 |
 | **XGBoost** | 0.303 | 0.713 | 0.425 | 0.658 | 0.733 |
 
-#### Résultats après Optimisation du Seuil
+#### 🎯 Après optimisation du Seuil
 
 | Modèle | Seuil Optimal | Précision | Rappel | F1-score | Accuracy | ROC AUC |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
