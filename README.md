@@ -76,3 +76,76 @@ Le code source complet de ce projet, y compris l'implémentation de l'ajustement
 
 J'espère que cette version te plaît ! Elle est prête à être déposée sur ton portfolio. 😊
 
+
+# 🛰️ Prédiction du Churn Utilisateur – Waze
+
+Ce projet présente une analyse complète visant à prédire les utilisateurs susceptibles de cesser d’utiliser **Waze** (churn).  
+L’objectif est de développer un modèle prédictif pour anticiper les départs et proposer des stratégies de rétention.
+
+📁 Tout le projet est contenu dans un seul notebook Jupyter :  
+👉 [`churn_prediction_waze.ipynb`](./churn_prediction_waze.ipynb)
+
+---
+
+## 🔍 Objectifs
+
+- Identifier les churners via des données d’usage anonymisées
+- Comparer des modèles de machine learning
+- Ajuster dynamiquement le **seuil de classification** pour maximiser le **F1-score**
+- Proposer des recommandations métier à partir des résultats
+
+---
+
+## 📌 Méthodologie dans le notebook
+
+✔️ **Prétraitement des données**
+- Nettoyage
+- Feature engineering (sessions récentes, utilisateur pro, etc.)
+- Encodage des variables catégorielles
+
+✔️ **Modélisation**
+- Modèles testés : Random Forest, XGBoost
+- Séparation : train (60%), validation (20%), test (20%)
+
+✔️ **Optimisation du seuil**
+- Maximisation du F1-score via une recherche de seuil optimal
+- Analyse d'impact métier : rappel vs. précision
+
+✔️ **Visualisations**
+- Courbes ROC, courbes Précision-Rappel, F1/Seuil
+
+📊 Voir les résultats dans le dossier [`/figures`](./figures)
+
+---
+
+## 🧠 Résultats clés
+
+| Modèle         | Seuil     | Précision | Rappel | F1-score | Accuracy |
+|----------------|-----------|-----------|--------|----------|----------|
+| Random Forest  | 0.524     | 0.330     | 0.603  | 0.427    | 0.713    |
+| XGBoost        | 0.508     | 0.311     | 0.689  | 0.429    | 0.674    |
+
+---
+
+## 🧠 Conclusion
+
+- L’ajustement du **seuil** améliore le compromis entre **faux positifs et faux négatifs**
+- Le **choix métier** guide l’interprétation : faut-il détecter tous les churners ou éviter d’alerter inutilement ?
+
+### 🔄 Perspectives
+
+- Ajouter les coûts métier dans l’optimisation
+- Tester d’autres modèles avancés
+- Déployer un tableau de bord de monitoring
+
+---
+
+## 🚀 Reproduire le projet
+
+### 1. Cloner le dépôt
+
+```bash
+git clone https://github.com/komiayi/churn-waze-prediction-.git
+cd churn-waze-prediction-
+
+
