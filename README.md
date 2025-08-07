@@ -1,9 +1,4 @@
 # churn-waze-prediction
-
-Absolument ! Je vais t'aider à rédiger ce rapport de manière claire, concise et professionnelle pour ton portfolio GitHub. Je vais structurer le contenu pour qu'il soit facile à lire et à comprendre, tout en mettant en valeur les étapes clés de ton projet.
-
-### Projet : Prédiction du Churn Utilisateur pour Waze
-
 Ce projet vise à créer un modèle de machine learning capable de prédire les utilisateurs qui risquent de cesser d'utiliser l'application Waze (churn). L'objectif est de permettre à l'entreprise de mettre en place des stratégies de rétention ciblées pour fidéliser ses utilisateurs.
 
 ---
