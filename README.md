@@ -6,7 +6,7 @@ Ce projet vise à créer un modèle de machine learning capable de prédire les 
 ### 🔍 1. Préparation et Traitement des Données
 
 * **Analyse Exploratoire des Données** : Une analyse des données a été réalisée pour comprendre les caractéristiques des utilisateurs.
-* **Création de Caractéristiques** : De nouvelles variables ont été créées pour enrichir le modèle, telles que le pourcentage de sessions sur le dernier mois, l'indication d'un conducteur professionnel, la moyenne de sessions par jour, etc.
+* **Création de Caractéristiques** : De nouvelles variables ont été créées pour enrichir le modèle, telles que le pourcentage de sessions sur le dernier mois, l'indication d'un conducteur professionnel, la moyenne de sssions par jour, etc.
 * **Encodage des Variables Catégorielles** : Les variables non numériques (`label` et `device`) ont été transformées en formats compréhensibles pour le modèle.
 * **Division du Dataset** : Le jeu de données a été scindé en trois parties pour l'entraînement (60%), la validation (20%) et le test (20%).
 
